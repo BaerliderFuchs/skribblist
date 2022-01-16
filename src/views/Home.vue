@@ -2,7 +2,17 @@
   <div class="home">
     <div class="column">
       <div class="column-header">
-        <h1 class="title">Bibliothek {{ averageAmountOfWords }}</h1>
+        <h1 class="title">
+          Bibliothek
+          <b-tooltip
+            label="Durchschnittliche Anzahl von Wörtern pro Liste"
+            type="is-light"
+            multilined
+            class="float-right-h1"
+          >
+            <span>Ø {{ Math.round(averageAmountOfWords * 100) / 100 }}</span>
+          </b-tooltip>
+        </h1>
         <div class="search-container">
           <b-input
             class="search"
@@ -103,7 +113,16 @@
     <div class="column">
       <div class="column-header">
         <h1 class="title">
-          Ausgewählt ({{ enabledWordlists.length }}/{{ totalAmountOfLists }})
+          Ausgewählt
+          <b-tooltip
+            label="Anzahl ausgewählter Listen"
+            type="is-light"
+            class="float-right-h1"
+          >
+            <span class="float-right-h1">
+              {{ enabledWordlists.length }}/{{ totalAmountOfLists }}
+            </span>
+          </b-tooltip>
         </h1>
         <b-button
           class="remove-all-button"
@@ -235,6 +254,7 @@ export default {
       sort: "Aplhabetisch ↓",
     };
   },
+
   created() {
     this.sortLibrary();
     this.categories.push("Alle");
@@ -256,7 +276,17 @@ export default {
       }
       return 0;
     });
+
+    let selectedLists = JSON.parse(localStorage.getItem("selectedLists"));
+    if (selectedLists.length) {
+      selectedLists.forEach((selectedList) => {
+        this.wordlists.forEach((wordlist, i) => {
+          if (selectedList == wordlist.name) this.enableWordlist(i);
+        });
+      });
+    }
   },
+
   computed: {
     dragOptions() {
       return {
@@ -318,6 +348,7 @@ export default {
       );
       this.getTotalWordCount();
       this.sortLibrary();
+      this.saveToLocalStorage();
     },
     enableWordlist(i) {
       this.enabledWordlists.push(this.wordlists[i]);
@@ -325,6 +356,7 @@ export default {
         (wordlist) => wordlist !== this.wordlists[i]
       );
       this.getTotalWordCount();
+      this.saveToLocalStorage();
     },
     sortLibrary() {
       switch (this.sort) {
@@ -396,11 +428,23 @@ export default {
 
       return finalWordString;
     },
+    saveToLocalStorage() {
+      var selectedLists = [];
+      if (this.enabledWordlists.length) {
+        this.enabledWordlists.forEach((wordlist) => {
+          selectedLists.push(wordlist.name);
+        });
+      }
+      localStorage.setItem("selectedLists", JSON.stringify(selectedLists));
+    },
   },
 };
 </script>
 
 <style lang="scss">
+.float-right-h1 {
+  float: right;
+}
 .home {
   display: flex;
   flex-direction: row;

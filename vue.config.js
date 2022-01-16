@@ -1,5 +1,5 @@
 module.exports = {
-    //...
+  publicPath: '/skribblist/',
     chainWebpack: config => {
       config.module
         .rule('raw')

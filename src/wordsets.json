@@ -87,7 +87,7 @@
     {
         "name": "League of Legends Dschungelmonster",
         "categories": ["Videospiele", "Charaktere"],
-        "words": "Baron Nashor, Kruftkrabbler, Blue Buff, Red Buff, Gromp, Küchenschabe,"
+        "words": "Baron Nashor, Kruftkrabbler, Blue Buff, Red Buff, Gromp, Küchenschabe, Harold,"
     },
     {
         "name": "Berühmte Autoren",
@@ -248,5 +248,15 @@
         "name": "Schauspieler",
         "categories": ["Personen"],
         "words": "Leonardo DiCaprio, Daniel Radcliffe, Emma Watson, Rupert Grint, Robert Downey Jr., Benedict Cumberbatch, Tom Holland, Neil Patrick Harris, Adam Sandler, Adam Driver, Matt Damon, Timothée Chalamet, Jennifer Lawrence, Johnny Depp, Brad Pitt, Will Smith, Tom Hanks, Tom Cruise, Denzel Washingtion, Samuel L. Jackson, George Clooney, Harrison Ford, Mark Hamill, Matthew McConaughey, Morgan Freeman, Marilyn Monroe, Dwayne Johnson, Ryan Gosling, Angelina Jolie, Bruce Willis, Ryan Reynolds, Scarlett Johanson, Keanu Reeves, Chris Pratt, Natalie Portman,"
+    },
+    {
+        "name": "The Legend Of Zelda - BOTW Charaktere",
+        "categories": ["Charaktere", "Videospiele"],
+        "words": "Link, Zelda, Mipha, Urbosa, Revali, Daruk, Impa, Sidon, Yunobo, Riju, Teba, Kass, Purah, Maronus, Ganon, Kohga, Terri, Vah Medoh, Vah Rudania, Vah Naboris, Vah Ruta,"
+    },
+    {
+        "name": "Bekannte Meme-Charaktere",
+        "categories": ["Memes", "Charaktere"],
+        "words": "Change my mind, Grumby Cat, Doge, Drake, The Rock, Kermit, Elon Musk, Karen, Suprised Pikachu, Pepe, Big Chungus, Ugandan Knuckles, Bob Ross, Shaggy, Shrek, Roblox, Barack Obama, Fortnite, Yobama, Obamium, PewDiePie, Thanos, Troll Face, Mr. Bean, Mike Wazowski, Spongebob, Spooderman, Johnny Sins, Duolingo Owl, Ricardo Milos, Annoying Orange, Sanic, Among Us, Sans, Donald Trump, Joe Biden, Mr. Incredible, Breaking Good, Gus Fring, Travis Scott, Nikocado Avocado, Goku Drip, Kanye West, Hasbulla, Chad, Chris Pratt, Harambe, PPAP, Dat Boi, Damn Daniel, Mark Zuckerberg, Wide Putin, Bongo Cat, Joker, Kirby, Florida Man, Bernie Sanders, Vin Diesel, Immortal Snail,"
     }
 ]
