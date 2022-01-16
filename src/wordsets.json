@@ -1,0 +1,252 @@
+[
+    {
+        "name": "League of Legends Champions",
+        "categories": ["Videospiele", "Charaktere"],
+        "words": "Aatrox, Ahri, Akali, Akshan, Alistar, Amumu, Anivia, Annie, Aphelios, Ashe, Aurelion Sol, Azir, Bard, Blitzcrank, Brand, Braum, Caitlyn, Camille, Cassiopeia, Chogath, Corki, Darius, Diana, Dr Mundo, Draven, Ekko, Elise, Evelynn, Ezreal, Fiddlesticks, Fiora, Fizz, Galio, Gangplank, Garen, Gnar, Gragas, Graves, Gwen, Hecarim, Heimerdinger, Illaoi, Irelia, Ivern, Janna, Jarvan IV , Jax, Jayce, Jhin, Jinx, Kaisa, Kalista, Karma, Karthus, Kassadin, Katarina, Kayle, Kayn, Kennen, Khazix, Kindred, Kled, Kogmaw, Leblanc, Lee Sin, Leona, Lillia, Lissandra, Lucian, Lulu, Lux, Malphite, Malzahar, Maokai, Master Yi, Miss Fortune, Mordekaiser, Morgana, Nami, Nasus, Nautilus, Neeko, Nidalee, Nocturne, Nunu, Olaf, Orianna, Ornn, Pantheon, Poppy, Pyke, Quinn, Rakan, Rammus, Reksai, Rell, Renekton, Rengar, Riven, Rumble, Ryze, Samira, Sejuani, Senna, Seraphine, Sett, Shaco, Shen, Shyvana, Singed, Sion, Sivir, Skarner, Sona, Soraka, Swain, Sylas, Syndra, Tahm Kench, Taliyah, Talon, Taric, Teemo, Thresh, Tristana, Trundle, Tryndamere, Twisted Fate, Twitch, Udyr, Urgot, Varus, Vayne, Veigar, Velkoz, Vex, Vi, Viego, Viktor, Vladimir, Volibear, Warwick, Wukong, Xayah, Xerath, Xin Zhao, Yasuo, Yone, Yorick, Yuumi, Zac, Zed, Ziggs, Zilean, Zoe, Zyra,"
+    },
+    {
+        "name": "Pokémon (1. Generation)",
+        "categories": ["Videospiele", "Charaktere"],
+        "words": "Bisasam, Bisaknosp, Bisaflor, Glumanda, Glutexo, Glurak, Schiggy, Schillok, Turtok, Raupy, Safcon, Smettbo, Hornliu, Kokuna, Bibor, Taubsi, Tauboga, Tauboss, Rattfratz, Rattikarl, Habitak, Ibitak, Rettan, Arbok, Pikachu, Raichu, Sandan, Sandamer, Nidorina, Nidoqueen, Nidoran, Nidorino, Nidoking, Piepi, Pixi, Vulpix, Vulnona, Pummeluff, Knuddeluff, Zubat, Golbat, Myrapla, Duflor, Giflor, Paras, Parasek, Bluzuk, Omot, Digda, Digdri, Mauzi, Snobilikat, Enton, Entoron, Menki, Rasaff, Fukano, Arkani, Quapsel, Quaputzi, Quappo, Abra, Kadabra, Simsala, Machollo, Maschock, Machomei, Knofensa, Ultrigaria, Sarzenia, Tentacha, Tentoxa, Kleinstein, Georok, Geowaz, Ponita, Gallopa, Flegmon, Lahmus, Magnetilo, Magneton, Porenta, Dodu, Dodri, Jurob, Jugong, Sleima, Sleimok, Muschas, Austos, Nebulak, Alpollo, Gengar, Onix, Traumato, Hypno, Krabby, Kingler, Voltobal, Lektrobal, Owei, Kokowei, Tragosso, Knogga, Kicklee, Nockchan, Schlurp, Smogon, Smogmog, Rihorn, Rizeros, Chaneira, Tangela, Kangama, Seeper, Seemon, Goldini, Golking, Sterndu, Starmie, Pantimos, Sichlor, Rossana, Elektek, Magmar, Pinsir, Tauros, Karpador, Garados, Lapras, Ditto, Evoli, Aquana, Blitza, Flamara, Porygon, Amonitas, Amoroso, Kabuto, Kabutops, Aerodactyl, Relaxo, Arktos, Zapdos, Lavados, Dratini, Dragonir, Dragoran, Mewtu, Mew,"
+    },
+    {
+        "name": "Apex Legends Helden",
+        "categories": ["Videospiele", "Charaktere"],
+        "words": "Bangalore, Bloodhound, Caustic, Gibraltar, Pathfinder, Lifeline, Octane, Mirage, Wraith, Wattson,"
+    },    
+    {
+        "name": "Der Herr der Ringe (bekannteste Figuren etc.)",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Gandalf, Frodo Beutlin, Samweis Gamdschie, Boromir, Merry, Gimli, Aragorn, Legolas, Pippin, Elrond, Galadriel, Bilbo Beutlin, Saruman, Gollum, Sauron, Isildur, Auenland, Mordor,"
+    },
+    {
+        "name": "Der Herr der Ringe (Kenner Figuren etc.)",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Arwen, Celeborn, Denethor, Elendil, Eomer, Eowyn, Faramir, Grima, Grischnakh, Lurtz, Saurons Mund, Theoden, Kankra, Balrog, Gondor, Stich, Bruchtal, Moria, Erebor, Radagast,"
+    },
+    {
+        "name": "Horrorfiguren (Bekanntesten)",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Micheal Myers, Jason Voorhees, Dracula, Ghostface, Jigsaw, Freddy Krüger, Pennywise, Nosferatu, Chucky die Mörderpuppe, Leatherface, Pinhead, Alien, Pyramidhead, Frankensteins Monster, Das Ding, Räuber Hotzenplotz,"
+    },
+    {
+        "name": "Superhelden und Bösewichte (Bekanntesten)",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Batman, Spiderman, Superman, Ironman, Wolverine, Aquaman, Antman, Hulk, Captain America, Green Lantern, Joker, Doktor Oktopus, Grüner Kobold, Catwoman,"
+    },
+    {
+        "name": "Spongebob Schwammkopf (Bekanntesten)",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Spongebob Schwammkopf, Patrick Star, Thaddäus Tentakel, Mr Krabs, Plankton, Gary, Perla Krabs, Sandy Cheeks, Meerjungfraumann, Blaubarschbube, Mrs Puff,"
+    },
+    {
+        "name": "Spongebob Schwammkopf (Kenner)",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Giselher Qualle, Quallenkönig, Quallenkönigin, Alaskanischer Stierwurm, Kumpelblase, Kevin die Seegurke, Goofy Goober, Karen, Turnschuhmann, Captain Magma, Elastischer Hosenbund, Miss Mal-so-mal-so, Mantarochen, Drecksackblase, Der fliegende Holländer,"
+    },
+    {
+        "name": "Spongebob Schwammkopf (Hardcore Modus)",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Robert Spongebob Schwammkopf, Patrick Star, Thaddäus Quentin Tentakel, Eugene Herbert Krabs, Sheldon J. Plankton, Sandra Cheeks, Giselher Qualle, Quallenkönig, Quallenkönigin, Alaskanischer Stierwurm, Kumpelblase, Kevin die Seegurke, Goofy Goober, Karen, Turnschuhmann, Captain Magma, Elastischer Hosenbund, Miss Mal-so-mal-so, Mantarochen, Drecksackblase, Der fliegende Holländer,"
+    },
+    {
+        "name": "Dragonball Z (Bekanntesten)",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Son Goku, Son Gohan, Piccolo, Vegeta, Trunks, Krillin, Muten Roshi, Tenshinhan, Frieza, Cell, Boo,"
+    },
+    {
+        "name": "Star Wars (Bekanntesten)",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Luke Skywalker, Anakin Skywalker, Prinzessin Leia, Obi-Wan Kenobi, Yoda, Han Solo, Chewbacca, R2-D2, C-3PO, Mace Windu, Jar Jar Binks, Darth Vader, Palpatine, Jabba, Darth Maul, General Grievous, Rey, Kylo Ren, General Grievous,"
+    },
+    {
+        "name": "Harry Potter (Bekanntesten)",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Harry Potter, Ron Weasley, Hermine Granger, Neville Longbottom, Draco Malfoy, Rubeus Hagrid, Albus Dumbledore, Lord Voldemort, Sirius Black, Severus Snape,"
+    },
+    {
+        "name": "Disney und Pixar Charaktere (Bekanntesten)",
+        "categories": ["Filme", "Serien", "Charaktere"],
+        "words": "Aladdin, Arielle, Buzz Lightyear, Donald Duck, Dumbo, Goofy, Micky Maus, Minnie Maus, Peter Pan, Pocahontas, Simba, Stitch, Winnie Puuh, Dagobert Duck, Tick, Trick, Track, Mulan, Mushu, Mufasa, Scar, Woodie, Mike Gloltzkowski, Elsa, Bambi, Chip & Chap, Kermit, Dumbo, Winnie Puuh, Goofy, Hercules, I-Aah, Mary Poppins, Peter Pan, Pinocchio, Pluto, Rapunzel, Kapitän Hook, Perry das Schnabeltier,"
+    },
+    {
+        "name": "Avatar der Herr der Elemente (Bekanntesten)",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Avatar Aang, Prinz Zuko, Prinzessin Azula, Katara, Toph Beifong, Sokka, Momo, Appa, Onkel Iroh, Feuerlord Ozai, Verbrutzelmann,"
+    },
+    {
+        "name": "Videospielfiguren",
+        "categories": ["Videospiele", "Charaktere"],
+        "words": "Agent 47, Big Daddy, Super Mario, Luigi, Wario, Bowser, Yoshi, Link, Altair, Ezio, Lara Croft, Donkey Kong, Pac-Man, Sonic, Crash Bandicoot, Sam Fisher, Big Smoke, Zelda, Waluigi, Prinzessin Peach, Kratos, Solid Snake, Vault Boy, Yoshimitsu, Toad, Shy Guy, Bowser Jr., Bayonetta, Kirby, Geralt von Rivia,"
+    },
+    {
+        "name": "Gängige Filmfiguren",
+        "categories": ["Charaktere", "Filme"],
+        "words": "Naruto, James Bond, Oddjob, Zorro, Dr Frankenstein, Wickie, Biene Maja, Nils Holgersson, Sailor Moon, Winnetou, Jack Sparrow, Forrest Gump, King Kong, Hellboy, Nemo, Shrek, Sherlock Holmes, Chihiro, Ruffy, Mononoke, Dorie, Schneewittchen, Penny, Sheldon Cooper, Hannibal Lecter, Alan Harper, Terminator, Shrek, Der gestiefelte Kater, Sam Winchester, Hänsel & Gretel, Indiana Jones, Leonidas, Rambo, Yosemite Sam, Asterix, Obelix, Miraculix, Troubadix, Majestix, Gutemine, Verleihnix, Automatix, Methusalix, Falbala, Idefix, Tick, Trick, Track, Daisy Duck, Dagobert Duck, Panzerknacker, Daniel Düsentrieb, Gundel Gaukeley, Mac Moneysac, Fred Feuerstein, Garfield, Lucky Luck, Pumuckl, Paulchen Panther, Schlumpfine, Gargamel, Homer Simpson, Marge Simpson, Bart Simpson, Lisa Simpson, Maggie Simpson, Abe Simpson, Knecht Ruprecht, Snowball, Bob der Baumeister, Yugi Muto, Seto Kaiber, Der schwarze Magier, Jessie & James, Ash Ketchum, Misty, Rocko, Dick & Doof,"
+    },
+    {
+        "name": "League of Legends Dschungelmonster",
+        "categories": ["Videospiele", "Charaktere"],
+        "words": "Baron Nashor, Kruftkrabbler, Blue Buff, Red Buff, Gromp, Küchenschabe,"
+    },
+    {
+        "name": "Berühmte Autoren",
+        "categories": ["Personen"],
+        "words": "Stephen King, Tolkien, JK Rowling, William Shakespeare, Astrid Lindgren, Sebastian Fizek,"
+    },
+    {
+        "name": "Sportler und Pseudo-Sportler",
+        "categories": ["Personen"],
+        "words": "The Undertaker, Cristiano Ronaldo, Phil Taylor, Michael Schumacher, Ralf Schumacher, Usain Bolt, Mike Tyson, Boris Becker, Mesut Özil, Wladimir Klitschko, Roger Federer,"
+    },
+    {
+        "name": "Bekannte Werbefiguren",
+        "categories": ["Charaktere"],
+        "words": "Ronald McDonald, Meister Proper, Käpt’n Iglo, Knorrli, Milka-Kuh, Duracell-Hase, Pepsiman, Uncle Ben,"
+    },
+    {
+        "name": "Bekannte Götter",
+        "categories": ["Personen", "Mythologie"],
+        "words": "Zeus, Neptun, Jupiter, Poseidon, Mars, Cthulhu, Armor,"
+    },
+    {
+        "name": "Griechische Mythologie",
+        "categories": ["Personen", "Mythologie"],
+        "words": "Achilles, Aphrodite, Apollon, Artemis, Athene, Dädalos, Dionysos, Hades, Helena, Hera, Herakles, Hermes, Narziss, Ödipus, Odysseus, Poseidon, Sisyphus, Tantalus, Trojanisches Pferd, Zeus,"
+    },
+    {
+        "name": "South Park Characktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Eric Cartman, Stan Marsh, Butters Stotch, Heidi Turner, Wendy Testaburger, Kenny McCormick, Kyle Broflovski, Schweinebärmann,"
+    },
+    {
+        "name": "Fantasiefiguren",
+        "categories": ["Personen"],
+        "words": "Weihnachtsmann, Osterhase, Zahnfee, Sherlock Scheiss, Dr Acula,"
+    },
+    {
+        "name": "Historische Figuren",
+        "categories": ["Personen", "Geschichte"],
+        "words": "Adolf Hitler, Julius Caesar, Jesus von Nazareth, Karl der Große, Richard Löwenherz, Robin Hood, Kleopatra, Tutanchamun, Abraham Lincoln, Albert Einstein, Martin Luther King, Napoleon, Christoph Kolumbus, Dschingis Khan, Leonardo da Vinci, Galileo Galilei, George Washington, Walt Disney, John F. Kennedy, Michael Jackson, Vladimir Putin, Joseph Stalin, Karl Marx, Nero, Marco Polo, Buddha, Charles Darwin,"
+    },
+    {
+        "name": "Trollbegriffe",
+        "categories": ["Random"],
+        "words": "Arschgeige, Schlitzohr, Spargeltarzan, Armleuchter, Arsch mit Ohren, Dumpfbacke, Erbsenzähler, Hackfresse, Hosenscheisser, Landei, Lustmolch, Miesepeter, Rotzlöffel, Pappnase, Pissnelke, Schlappschwanz, Stinkstiefel, Trantüte, Tratschtante, Warmduscher, Weichei, Ernte, Suppenkasper,"
+    },
+    {
+        "name": "Promis",
+        "categories": ["Personen"],
+        "words": "Paris Hilton, Daniel Küblböck, Stefan Raab, Oliver Pocher, Dieter Bohlen, Eminem, Miley Cyrus, Hannah Montana,"
+    },
+    {
+        "name": "Gurketruppe Insiders",
+        "categories": ["Random"],
+        "words": "Tabaluga, Gölä, Peter Maffay, Roger Federer, Christoph Blocher, Erich Hess, Jonny5, Sport, besoffen, Karim, Mias, Julian, Karl Marx, Seryldas Bitterkeit, Big Shaq, Jeremy Fragrance, Connie, Fräncu, Joël, Rechtsverschiebung, Tiefschwarz, Miro, Red Flag, Excel, Mallorca, Standardnormalverteilung, Jesus,"
+    },
+    {
+        "name": "Overwatch Charaktere",
+        "categories": ["Charaktere", "Videospiele"],
+        "words": "Ana, Ashe, Baptiste, Bastion, Brigitte, D.VA, Doomfist, Genji, Hanzo, Junkrat, Lucio, McCree, Mei, Mercy, Moira, Orisa, Pharah, Reaper, Reinhardt, Roadhog, Soldier 76, Sombra, Symmetra, Torbjorn, Tracer, Widowmaker, Winston, Wrecking Ball, Zarya, Zenyatta,"
+    },
+    {
+        "name": "Super Smash Bros. Ultimate Charaktere",
+        "categories": ["Charaktere", "Videospiele"],
+        "words": "Mario, Donkey Kong, Link, Samus, Dunkle Samus, Yoshi, Kirby, Fox, Pikachu, Luigi, Ness, Captain Falcon, Pummeluff, Peach, Daisy, Bowser, Ice Climber, Shiek, Zelda, Dr. Mario, Pichu, Falco, Marth, Lucina, Junger Link, Ganandorf, Mewtu, Roy, Chrom, Mr. Game & Watch, Meta-Knight, Pit, Finsterer Pit, Zero Suit Samus, Wario, Snake, Ike, Pokémon-Trainer, Diddy Kong, Lucas, Sonic, König Dedede, Olimar, Lucario, R.O.B., Toon-Link, Wolf, Bewohner, Mega Man, Wii Fit-Trainer, Rosalina und Luma, Little Mac, Quajutsu, Mii-Kämpfer, Palutena, Pac-Man, Daraen, Shulk, Bowser Jr., Duck Hunt, Ryu, Ken, Cloud, Corrin, Bayonetta, Inkling, Ridley, Simon, Richter, King K. Rool, Melinda, Fuegro,"
+    },
+    {
+        "name": "Super Smash Bros. Ultimate DLC Charaktere",
+        "categories": ["Charaktere", "Videospiele"],
+        "words": "Piranha-Pflanze, Joker, Held, Banjo und Kazooie, Terry, Byleth, Min Min, Steve, Sephiroth, Pyra, Kazuya, Sora,"
+    },
+    {
+        "name": "Literarische Epochen",
+        "categories": ["Geschichte"],
+        "words": "Antike, Mittelalter, Renaissance und Reformation, Barock, Aufklärung, Sturm und Drang, Klassik, Romantik, Realismus, Naturalismus, Expressionismus, Exilliteratur, Nachkriegsliteratur, Gegenwartsliteratur,"
+    },
+    {
+        "name": "Deutsche YouTuber",
+        "categories": ["Personen"],
+        "words": "ApeCrime, BibisBeautyPalace, CrispyRob, Coldmirror, Dagi Bee, darkvictory, DieLochis, Domtendo, Emrah, Felix von der Laden, GermanLetsPlay, Gewitter im Kopf, GommeHD, Gronkh, HandOfBlood, iBlali, inscope21, Julia Beautx, Julien Bam, Julienco, LeFloid, Leon Machère, LUCA, Maudado, Maxim, MontanaBlack, NebelNiek, Paluten, PietSmiet, rewinside, Shirin David, Simon Desue, Stegi, Taddl, ungespielt, unsympathischTV, Vincent Lee, World Wide Wohnzimmer, YTITTY, Zombey,"
+    }, 
+    {
+        "name": "Musikinstrumente",
+        "categories": ["Musik"],
+        "words": "Akkordeon, Banjo, Blockflöte, Cello, Dudelsack, Geige, Gitarre, E-Gitarre, Bass, Harfe, Keyboard, Klarinette, Klavier, Kontrabass, Oboe, Okarina, Orgel, Panflöte, Pauke, Posaune, Querflöte, Saxophon, Schlagzeug, Tenorhorn, Triangel, Trompete, Tuba, Xylophon,"
+    },
+    {
+        "name": "Game of Thrones Characktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Ned Stark, Robert Baratheon, Jaime Lannister, Cersei Lannister, Daenerys Targaryen, Jorah Mormont, Viserys Targaryen, Jon Snow, Robb Stark, Sansa Stark, Arya Stark, Theon Greyjoy, Brand Stark, Joffrey Baratheon, Tyrion Lannister, Kleinfinger, Stannis Baratheon, Melisandre, Margaery Tyrell, Tywin Lannister, Ygritte, Brienne von Tarth, Ramsay Bolton, Tommen Baratheon, Grauer Wurm, Nachtkönig,"
+    },
+    {
+        "name": "Breaking Bad Hauptcharaktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Walter White, Skyler White, Jesse Pinkman, Hank Schrader, Marie Schrader, Walter White Jr., Saul Goodman, Gus Fring, Mike Ehrmantraut, Todd Alquist,"
+    },
+    {
+        "name": "How I Met Your Mother Hauptcharaktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Ted Mosby, Marshall Eriksen, Robin Scherbatsky, Barney Stinson, Lily Aldrin,"
+    },
+    {
+        "name": "The Big Bang Theory Hauptcharaktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Leonard Hofstadter, Sheldon Cooper, Penny, Howard Wolowitz, Howard Wolowitz,"
+    },
+    {
+        "name": "Arcane Charaktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Vi, Powder, Jinx, Jayce, Caitlyn, Silco, Viktor, Mel, Vander, Ekko, Heimerdinger, Sevika, Marcus, Mylo, Claggor, Deckard, Benzo, Grayson, Singed, Finn, Ambessa, Sky,"
+    },
+    {
+        "name": "Umbrella Academy Charaktere",
+        "categories": ["Serien", "Charaktere"],
+        "words": "Reginald, Luther, Diego, Allison, Klaus, Five, Ben, Vanya, A.J. Hazel, Cha-Cha, Pogo, Grace,"
+    },
+    {
+        "name": "Studio Ghibli Charaktere",
+        "categories": ["Filme", "Charaktere"],
+        "words": "Ashitaka, Calcifer, Chihiro, Eboshi, Faulgott, Haku, Hauro, Hexe aus dem Niemandsland, Katzenbus, Kiki, Markl, Moro, Nausicaä, Ohngesicht, Okkoto, Prinzessin Mononoke, San, Satsuki, Sophie, Totoro, Waldgot, Waldgeister, Yubaba, Zeniba,"
+    },
+    {
+        "name": "Berühmte Bauwerke",
+        "categories": ["Geografisch"],
+        "words": "Abu Simbel, Arc de Triomphe, Big Ben, Brandenburger Tor, Cheops-Pyramide, Chinesische Mauer, Christo Rendetor, Eiffelturm, Empire State Building, Felsendom, Golden Gate Bridge, Harbour Bridge, Freiheitsstatue, Karlsbrücke, Kolosseum, Machu Picchu, Mandala Bay Casino, Markusplatz, Panamakanal, Schiefer Turm von Pisa, Sphinx, Stonehenge, Suezkanal, Taj Mahal, Terrakottakrieger, Time Square, Weisses Haus,"
+    },
+    {
+        "name": "Bekannte Filme",
+        "categories": ["Filme"],
+        "words": "Interstellar, Inception, The Wolf of Wall Street, Forest Gump, Star Wars, Der Herr der Ringe, Der Hobbit, Oben, Die Tribute von Panem, WALL-E, Der König der Löwen, Dune, Avatar, Titanic, Jurassic World, Avengers, Fast & Furious, Die Eiskönigin, Harry Potter, Doe Schöne und das Biest, Iron Man, Minions, Spider-Man, James Bond, Transformers, The Dark Knight, Joker, Toy Story, Fluch der Karibik, Ich - Einfach unverbesserlich, Zoomania, Dschungelbuch, Findet Nemo, Jumanji, Shrek, Bohemian Rhapsody, Ice Age, Guardians of the Galaxy, Alles steht Kopf, Venom, Independance Day, E.T., Mission: Impossible, Indiana Jones, Deadpool, Pulp Fiction, Blade Runner, Casablanca, Fight Club, Der Pate, Matrix, Dirty Dancing, Alien, The Shining, Das Schweigen der Lämmer, Zurück in die Zukunft, Der Weisse Hai, Ghostbusters, Ziemlich beste Freunde, American Psycho, Rocky, Terminator, Gladiator, Der Zauberer von Oz, Chihiros Reise ins Zauberland,"
+    },
+    {
+        "name": "Bekannte Serien",
+        "categories": ["Serien"],
+        "words": "Game Of Thrones, Breaking Bad, Sherlock, Chernobyl, The Mandalorian, Stranger Things, Dark, The Umbrella Academy, The Big Bang Theory, Das Damengambit, Rick and Morty, Vikings, Adventure Time, Gravity Falls, Better Call Saul, Arcane, Black Mirror, The Walking Dead, House Of Cards, How I Met Your Mother, Suits, Friends, Lucifer, Narcos, Die Simpsons, Doctor Who, Outlander, American Horror Story, Haus des Geldes, Avatar - Der Herr der Elemente, Once Upon A Time, The Witcher, Tote Mädchen lügen nicht, Mr. Robot, Prison Break, The Crown, Orange is The New Black, Lupin, Club der roten Bänder, Naruto, Squid Game, South Park,"
+    },
+    {
+        "name": "Orte in Bern",
+        "categories": ["Geografisch", "Schweiz"],
+        "words": "gibb, Hauptbahnhof, Lorraine, Bundesplatz, Bundeshaus, Zytglogge, Münster, Bärengraben, Nydeggbrücke, Klangbrücke, Dählhölzli, Kindlifresserbrunnen, Grand Casino Bern, Aare, Marzili, Kleine Schanze, Grosse Schanze, Welle 7, Wankdorf Stadion, Rosengarten,"
+    },
+    {
+        "name": "Schweizer Begriffe",
+        "categories": ["Schweiz"],
+        "words": "Raclette, Fondue, Toblerone, Schockolade, Kambli, Aromat, Maggi, Sackmesser, Volg, Landi, Migros, Fasnacht, SBB, Alphorn, Käse, Swisscom, SRF,"
+    },
+    {
+        "name": "Bekannte Schweizer",
+        "categories": ["Schweiz", "Personen"],
+        "words": "Ueli Nurer, Guy Parmelin, Alain Berset, Mani Matter, Gölä, DJ Bobo, Lo & Leduc, Sven Epiney, Bligg, Roger Federer, Lara Gut-Behrami,"
+    },
+    {
+        "name": "Schweizer Memes",
+        "categories": ["Schweiz", "Memes", "Personen"],
+        "words": "Herrmann Schönbächler, Richi, Bruno der Kameramann, Mögli, The Ring Thing, Ueli der Schwert,"
+    },
+    {
+        "name": "Schauspieler",
+        "categories": ["Personen"],
+        "words": "Leonardo DiCaprio, Daniel Radcliffe, Emma Watson, Rupert Grint, Robert Downey Jr., Benedict Cumberbatch, Tom Holland, Neil Patrick Harris, Adam Sandler, Adam Driver, Matt Damon, Timothée Chalamet, Jennifer Lawrence, Johnny Depp, Brad Pitt, Will Smith, Tom Hanks, Tom Cruise, Denzel Washingtion, Samuel L. Jackson, George Clooney, Harrison Ford, Mark Hamill, Matthew McConaughey, Morgan Freeman, Marilyn Monroe, Dwayne Johnson, Ryan Gosling, Angelina Jolie, Bruce Willis, Ryan Reynolds, Scarlett Johanson, Keanu Reeves, Chris Pratt, Natalie Portman,"
+    }
+]
