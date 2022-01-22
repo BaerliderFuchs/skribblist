@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <!--     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
     <header>
       <h1 class="title is-1">Skribblist</h1>
       <h1 class="subtitle">
         Deutsche Wörterlisten für
         <a href="https://skribbl.io/" target="_blank">Skribbl.io</a>
       </h1>
+      <nav>
+        <router-link to="/">Wörterlisten</router-link> |
+        <router-link to="/credits">Credits</router-link>
+      </nav>
     </header>
     <router-view class="view" />
   </div>
@@ -26,12 +26,12 @@
   background: #586b7e;
 }
 
-#nav {
-  padding: 30px;
+nav {
+  color: #363636;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #363636;
 
     &.router-link-exact-active {
       color: #42b983;
@@ -75,6 +75,6 @@ header {
 }
 
 .view {
-  padding: 64px 15%;
+  padding: 32px 15%;
 }
 </style>

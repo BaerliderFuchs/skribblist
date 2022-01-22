@@ -3,6 +3,7 @@ node_modules
 /dist
 
 deploy.sh
+uncredited-lists.json
 
 
 # local env files

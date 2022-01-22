@@ -107,7 +107,7 @@
     {
         "name": "Bekannte Götter",
         "categories": ["Personen", "Mythologie"],
-        "words": "Zeus, Neptun, Jupiter, Poseidon, Mars, Cthulhu, Armor,"
+        "words": "Zeus, Neptun, Jupiter, Poseidon, Mars, Cthulhu, Amor,"
     },
     {
         "name": "Griechische Mythologie",
@@ -217,7 +217,7 @@
     {
         "name": "Bekannte Filme",
         "categories": ["Filme"],
-        "words": "Interstellar, Inception, The Wolf of Wall Street, Forest Gump, Star Wars, Der Herr der Ringe, Der Hobbit, Oben, Die Tribute von Panem, WALL-E, Der König der Löwen, Dune, Avatar, Titanic, Jurassic World, Avengers, Fast & Furious, Die Eiskönigin, Harry Potter, Doe Schöne und das Biest, Iron Man, Minions, Spider-Man, James Bond, Transformers, The Dark Knight, Joker, Toy Story, Fluch der Karibik, Ich - Einfach unverbesserlich, Zoomania, Dschungelbuch, Findet Nemo, Jumanji, Shrek, Bohemian Rhapsody, Ice Age, Guardians of the Galaxy, Alles steht Kopf, Venom, Independance Day, E.T., Mission: Impossible, Indiana Jones, Deadpool, Pulp Fiction, Blade Runner, Casablanca, Fight Club, Der Pate, Matrix, Dirty Dancing, Alien, The Shining, Das Schweigen der Lämmer, Zurück in die Zukunft, Der Weisse Hai, Ghostbusters, Ziemlich beste Freunde, American Psycho, Rocky, Terminator, Gladiator, Der Zauberer von Oz, Chihiros Reise ins Zauberland,"
+        "words": "Interstellar, Inception, The Wolf of Wall Street, Forest Gump, Star Wars, Der Herr der Ringe, Der Hobbit, Oben, Die Tribute von Panem, WALL-E, Der König der Löwen, Dune, Avatar, Titanic, Jurassic World, Avengers, Fast & Furious, Die Eiskönigin, Harry Potter, Doe Schöne und das Biest, Iron Man, Minions, Spider-Man, James Bond, Transformers, The Dark Knight, Joker, Toy Story, Fluch der Karibik, Ich - Einfach unverbesserlich, Zoomania, Dschungelbuch, Findet Nemo, Jumanji, Shrek, Bohemian Rhapsody, Ice Age, Guardians of the Galaxy, Alles steht Kopf, Venom, Independance Day, E.T., Mission: Impossible, Indiana Jones, Deadpool, Pulp Fiction, Blade Runner, Casablanca, Fight Club, Der Pate, Matrix, Dirty Dancing, Alien, The Shining, Das Schweigen der Lämmer, Zurück in die Zukunft, Der Weisse Hai, Ghostbusters, Ziemlich beste Freunde, American Psycho, Rocky, Terminator, Gladiator, Der Zauberer von Oz, Chihiros Reise ins Zauberland, Your Name,"
     },
     {
         "name": "Bekannte Serien",
@@ -258,5 +258,68 @@
         "name": "Bekannte Meme-Charaktere",
         "categories": ["Memes", "Charaktere"],
         "words": "Change my mind, Grumpy Cat, Doge, Drake, The Rock, Kermit, Elon Musk, Karen, Suprised Pikachu, Pepe, Big Chungus, Ugandan Knuckles, Bob Ross, Shaggy, Shrek, Roblox, Barack Obama, Fortnite, Yobama, Obamium, PewDiePie, Thanos, Troll Face, Mr. Bean, Mike Wazowski, Spongebob, Spooderman, Johnny Sins, Duolingo Owl, Ricardo Milos, Annoying Orange, Sanic, Among Us, Sans, Donald Trump, Joe Biden, Mr. Incredible, Breaking Good, Gus Fring, Travis Scott, Walter White, Nikocado Avocado, Goku Drip, Kanye West, Hasbulla, Chad, Chris Pratt, Harambe, PPAP, Dat Boi, Damn Daniel, Mark Zuckerberg, Wide Putin, Bongo Cat, Joker, Kirby, Florida Man, Bernie Sanders, Vin Diesel, Immortal Snail, John Cena,"
+    },
+    {
+        "name": "Der Herr Der Ringe Begriffe",
+        "categories": ["Filme"],
+        "authors": ["https://twitter.com/LordOfAngmar2"],
+        "words": "Hobbingen, Beutelsend, Das Auenland, Bree, Die Wetterspitze, Bruchtal, Rivendell, Pass des Karadras, Minen von Moria, Lothlorien, Die Argonaut, Emyn Muil, Rohan, Edoras, Helms Klamm, Die Totensümpfe, Fangorn-Wald, Isengard, Dol-Guldur, Erebor, Gundabad-Berg, Angmar, Erech, Das Schwarze Tor, Gondor, Düsterwald, Rhun, Aradwaith, Mordor, Osgiliath, Minas Morgul, Minas Tirith, Cirith Ungol, Barad-Dur, Schicksalsberg, Die Grauen Anfurten, Esgaroth, Hobbits, Elben, Orks, Trolle, Zwerge, Zauberer, Uruk-Hai, Warge, Drachen, Menschen, lembas, Tüften, Schattenfell, Die Goldene Halle, Lutz, Balrog, Glamdring, Anduril, Stich, Morgulklinge, Nâzgul, Dunland, Hexenkönig, Gollum, Sméagol, Samweis Gamdschie, Peregrin Tuk, Meriadoc Brandybock, Frodo Beutlin, Legolas, Gimli, Boromir, Faramir, Aragorn, Theoden, Eomer, Eowyn, Gandalf der Graue, Gandalf der Weiße, Mithrandir, Bilbo Beutlin, Arwen, Elrond, Denethor, Gothmog, Saurons Mund, Azok, Bolg, Thranduil, Thorin Eichenschild, Isildur, Galadriel, Bombur, Balin, Dwalin, Baumbart, Kankra, Grima Schlangenzunge, Tauriel, Bard, Smaug, Sauron, Der Eine Ring, Die Unsterblichen Lande, Entthing, Kazad-Dum, Mithril, Die Gefährten, Die zwei Türme, Die Rückkehr des Königs, Palantir, Riesenadler, Pelennor,"
+    },
+    {
+        "name": "Minecraft Monster",
+        "categories": ["Videospiele", "Charaktere"],
+        "words": "Zombie, Skelett, Creeper, Spinne, Spinnenreiter, Zombiedorfbewohner, Hexe, Hühnerreiter, Ghast, Zombifizierter Piglin, Magmawürfel, Zombifizierter Piglin-Hühnerreiter, Hoglin, Piglin, Piglin-Barbar, Enderman, Schleim, Silberfischchen, Höhlenspinne, Wächter, Großer Wächter, Skelettreiter, Wüstenzombie, Eiswanderer, Diener, Magier, Plagegeist, Phantom, Ertrunkener, Plünderer, Verwüster, Lohe, Witherskelett, Endermite, Schulker, Enderdrache, Whiter,"
+    },
+    {
+        "name": "Disney Filme",
+        "categories":["Filme"],
+        "authors": ["Sunshine#4719"],
+        "words":"Der König der Löwen, Mary Poppins, Tarzan, Arielle die Meerjungfrau, Aladdin, Mulan, Küss den Frosch, Pocahontas, Cinderella, Hercules, Der Glöckner von Notre Dame, Susi und Strolch, Aristocats, Bambi, Pinocchio, Bärenbrüder, Das Dschungelbuch, Cap und Capper, Plötzlich Prinzessin, 101 Dalmatiner,  Peter Pan, Lilo & Stitch, Die Eiskönigin, Zoomania, Alice im Wunderland, Die Schöne und das Biest, Toy Story, Cars, Die Monster Uni, Alles steht Kopf, Merida, Findet Nemo, Planes, Winnie Puuh, Tinker Bell, Eine Weihnachtsgeschichte, Zoomania, Fluch der Karibik, die Unglaublichen,"
+    },
+    {
+        "name": "Gegenstände und Möbel im Haushalt",
+        "categories":["Alltag", "Gegenstände"],
+        "authors": ["tjk735#4113"],
+        "words": "Stuhl, Tisch, Sessel, Sofa, Schaukelstuhl, Schreibtisch, Bank, Schrank, Fernseher, Radio, Toilette, Waschbecken, Regal, Hängematte, Bett, Hängeschrank, Herd, Spülmaschine, Waschmaschine, Wäscheleine, Kiste, Kühlschrank, Spülbecken, Stehlampe, Kronleuchter, Vitrine, Stehtisch, Zimmerpflanze, Hocker, Standuhr, Aquarium, Terrarium, Nachttisch, Werkbank, Schreibtisch, Mülleimer, Globus, Liegestuhl, Computer, Adventskranz, Thron, Bücherregal, Spiegel, Heizung, Pinnwand,"
+    },
+    {
+        "name": "Naruto Charaktere",
+        "categories": ["Anime", "Charaktere"],
+        "authors": ["https://www.instagram.com/annika.day_official"],
+        "words": "Naruto, Naruto Uzumaki, Sasuke, Sakura, Kakashi, Shikamaru, Ino, Chojii, Asuma, Shino, Hinata, Kiba, Akamaru, Kurenai, Neji, Rock Lee, Tenten, Might Guy, Hashirama, Tobirama, Hiruzen, Minato, Kushina, Itachi, Uzumaki Clan, Uchiha Clan, Harano Clan, Hatake Clan, Senju Clan, Nara Clan, Yamanaka Clan, Akimichi Clan, Aburame Clan, Hyuga Clan, Inuzuka Clan, Akatsuki, Kisame, Deidara, Sasori, Zetsu, Tobi, Pain, Konan, Hidan, Kakuzu, Yahiko, Gaara, Temari, Kankuro, Himawari Uzumaki, Boruto Uzumaki, Inojin Yamanaka, Sai, Shikadai Nara, Orochimaru, Tsunade, Jiraiya, Gamabunta, Gamakichi, Jinchuriki, Yugito, Yagura, Roshi, Han, Utakata, Fuu, Killer Bee, Bijuu, Shukaku, Matatabi, Isobu, Son Goku, Kokuo, Saiken, Chomei, Gyuki, Kurama, Hanabi, Hyuga, Iruka, Zabuza, Haku, Kabuto, Shizune, Yamoto, Kotetsu, Izomu, Karin, Kaguya, Sarada, Mizuki, Chocho, Konohagakure, Sunagakure, Iwagakure, Otogakure, Kirigakure, Amegakure, Kumogakure, Suigetsu, Jugo, Madara, Izuna, Obito, Konohamaru, Baki, Genin, Chunin, Jonin, Anbu, Hokage, Shinobi, Kunoichi, Jutsu, Katon, Raiton, Fuuton, Doton, Suiton, Sharingan, Rinnengan, Byakugan, Ying, Yan, Jougan, Rinne Sharingan, Mangekyou Shanringan, Sakon, Kidomaru, Jirobo, Tayuya,"
+    },
+    {
+        "name": "Verrückte Berufe",
+        "categories": ["Alltag"],
+        "words": "Ohrenputzer, Vorkoster für Tierfutter, Erschrecker, Tatortreiniger, Glückskeks-Autor, Straßenzahnartz, Deo-Tester, Schlussmacher, Golfballtaucher, Foodstylist, Wasserrutschen Tester, Modellbauer Lego, Anprobe-Model, Warm-Upper, Beerdigungs-Clown, Kaugummi-Entferner,  U-Bahn-Stopfer, Fahrrad-Fischer, Menschliche Kanonenkugel, Puppendoktor, Elefanten-Sperma-Entnehmer, Nagellack-Farben-Bezeichner, Möbel-Probebesitzer, Kokosnüsse-Überwacher, Dialog-Abgewöhner, Haiapuarien-Reiner, Professioneller Ansteher, Eincreme-Assistent,"
+    },
+    {
+        "name": "Essen & Trinken",
+        "categories": ["Alltag", "Essen & Trinken"],
+        "words": "Pommes, Burger, Pizza, Nudeln, Karotten, Speck, Fleisch, Chicken Nuggets, Gemüse, Obst, Früchte, Melone, Melonenscheiben, Schinken, Wurstscheibe, Brot, Orangen, Äpfel, Kartoffeln, Croissant, Milchreis, Reis, Sushi, Salat, Birnen, Blaubeeren, Waldbeeren, Erdbeeren, Bananen, Eier, Spiegeleier, Döner, Süßigkeiten, Schokolade, Chips, Kürbisse, Mango, Honig, Apfelsaft, Cola, Wasser, Orangensaft, Milch, Alkohol, Hähnchenfleisch, Schweinefleisch, Rindfleisch, Burrito, Rührei, Eiscreme, Schokoladensauce, Kuchen, Schokoladenkuchen, Muffin, Kekse, Plätzchen, Waffeln, Frühstück, Mittagessen, Abendessen, Nachtsnack, Vegetarisch, Vegan, Bratwurst, Currywurst, Schnittlauch, Salbei, Feldsalat, Petersilie, Blumenkohl, Erbsen, Linsen, Gartenkresse, Senf, Sesam, Joghurt, Buttermilch, Sauermilchkäse, Frischkäse, Elsbeere, Mispel, Pflaumen, Ölpalme, Oliven, Zibarte, Brombeere, Wildfleisch, Käse, Wein, Pfirsiche, Waldmeister, Grillfleisch, Bohnensalat, Spätzle, Sauerkraut, Truthahn, Bier, essen, trinken, saufen, Schokoladengetränk,"
+    },
+    {
+        "name": "Tiere",
+        "categories": ["Tiere"],
+        "authors": ["Fynnja Fox"],
+        "words": "Hund, Katze, Spinne, Leguan, Frosch, Ente, Gans, Schwan, Maulwurf, Specht, Ameise, Adler, Ochse, Biene, Libelle, Pinguin, Eisbär, Braunbär, Grizzlybär, Fuchs, Taube, Axolotl, Wespe, Fliege, Opossum, Stier, Kuh, Klapperschlange, Anakonda,  Tintenfisch, Kalmar, Oktopus, Blauwal, Buckelwal, Plankton, Delfin, Orca, Narwal, Seestern, Weißer Hai, Hammerhai, Tigerhai, Eidechse, Schnabeltier, Amsel, Kuckuck, Meise, Wolf, Elch, Wurm, Pferd, Schwamm, Gorilla, Schimpanse, Totenkopfäffchen, Schnecke, Falke, Erdmännchen, Löwe, Giraffe, Elefant, Tiger, Schwein, Huhn, Wildschwein, Kolibri, Nashorn, Kojote, Rennkuckuck, Tausendfüßler, Panda, Roter Panda, Stachelschwein, Igel, Leopard, Jaguar, Schwarzer Panther, Gepard, Puma, Esel, Hase, Kaninchen, Komodowaran, Lemur, Laternenfisch, Auster, Sardine, Mondfisch, Alligator, Krokodil, Flusspferd, Pferd, Pony, Känguru, Koala, Raupe, Larve, Termite, Maus, Ratte, Gottesanbeterin, Motte, Schmetterling, Eule, Faultier, Hirsch, Reh, Eichhörnchen, Rennmaus, Marienkäfer, Lachs, Kugelfisch, Seepferdchen, Schildkröte, Storch, Biber, Kellerassel, Ameisenlöwe, Ameisenbär, Hornisse, Flussdelfin, Hamster, Walross, Orang-Utan, Papagei, Tukan, Koi-Karpfen, Hyäne, Krabbe, Hummer, Schaf, Pavian, Krake, Pelikan, Clownfisch, Kamel, Albatros, Robbe, Fledermaus, Aal, Blutegel, Barsch, Dachs, Chamäleon, Esel, Krustenechse, Frettchen, Flamingo, Geier, Gazelle, Gürteltier, Goldfisch, Gecko, Husky, Walhai, Hermelin, Kondor, Maikäfer, Kranich, Goliathkäfer, Kanarienvogel, Wellensittich, Krähe, Kormoran, Kakadu, Wildkatze, Luchs, Otter, Löffelhund, Blattlaus, Lama, Alpaka, Maultier, Tintenfisch, Muräne, Milan, Marderhund, Waschbär, Meerschweinchen, Natter, Nerz, Nasenbär, Python, Pfau, Piranha, Qualle, Rochen, Regenwurm, Seelöwe, Salamander, Siebenschläfer, Strauß, Schakal, Springbock, Sperling, Seehund, Stinktier, Steinbock, Schabe, Kakerlake, Schützenfisch, Tapir, Uhu, Warzenschwein, Wattwurm, Wels, Zecke, Zebra, Ziege, Zitteraal, Agame, Blindschleiche, Schakal, Chinchilla, Weißkopfseeadler, Murmeltier, Okapi, Quastenflosser, Rentier, Eintagsfliege, Affe, Antilope, Ara, Forelle, Siebenschläfer, Bienenfresser, Bison, Bock, Bonobo, Brieftaube, Buckelwal, Bulldogge, Mops, Bussard, Dackel, Dalmatiner, Dromedar, Eber, Eisvogel, Elster, Feldgrille, Fasan, Floh, Flunder, Gibbon, Katta, Gnu, Hängebauchschwein, Holzwurm, Jaguar, Kaulquappe, Kliesche, Kranich, Küchenschabe, Liger, Lippenbär, Made, Makrele, Manteltier, Seegurke, Seekuh, Milbe, Monarchfalter, Ozelot, Mungo, Polarfuchs, Polarwolf, Pottwal, Reiher, Sägefisch, Schleimaal, Scholle, Schwertfisch, Seeanemone, Seeigel, Segelfalter, Shrimp, Skarabäus, Skorpion, Spitzmaus, Zaunkönig, Sturmtaucher, Tanuki, Tarantel, Trampeltier, Truthahn, Viper, Vogelspinne, Weberknecht, Wasserschwein, Wiesel, Windhund, Yak, Zikade, Belugawal, Mistkäfer, Schäferhund,"
+    },
+    {
+        "name": "Harry Potter Begriffe",
+        "categories": ["Charaktere", "Filme", "Gegenstände"],
+        "authors": ["https://twitter.com/LordOfAngmar2", "venenum#0239", "Daimondo#4028", "https://www.instagram.com/nachtiwolfi"],
+        "words": "Todesser, Zauberer, Hexe, Hexenmeister,  Katze, Fledermaus, Kröte, Ratte, Kessel, Buch, Zauberbuch, Zauberspruch, Zauberstab, Besen, Grabstein, Feder, Kerze, Schach, Duell, Schüler, Schule, Treppen, Proffessoren, Meerjungfrau, Ghul, Geist, Oga, Phoenix, Einhorn, Magische Wesen, Zwerg, Kobold, Gnom, Schlange, Becher, Krug, Fluch, Zauber, Schnecke, Umhang, Uhr, Schwert, Waffe, Diadem, Koffer, Gepäck, Messer, Dolch, Kristallkugel, Amulett, Tinte, Passwort, Drache, Harry Potter, James Potter, Lily Potter, Weasley Familie, Ron Weasley, George Weasley, Fred Weasley, Ginny Weasley, Molly Weasley, Arthur Weasley, Charlie Weasley, Bill Weasley, Percy Weasley, Hermione Granger, Neville Longbottom, Lord Voldemort, Tom Riddle, Draco Malfoy, Lucius Malfoy, Narcissa Malfoy, Sirius Black, Bellatrix Lestrange, Luna Lovegood, Sirius Black, Remus Lupin, Albus Dumbledore, Severus Snape, Hagrid,  Dobby, Pansy Parkinson, Gellert Grindewald, Cho Chang, Dolores Umbridge, Peter Pettigrew, Dursley Familie, Dudley Dursley, Fleur Delacour, Alastor Moody, Mad Eye, Seamus Finnigan, Argus Flinch, Lavender Brown, Viktor, Krum, Crabbe, Goyle, Cedrig Diggory, Argus Filch, Ligusterweg, , Mischief managed, , Hedwig, , Butterbier, Sorting Hat, Oliver Wood, Olivanders, Stein der Weisen, Kammer des Schreckens, Gefangener von Askaban, Feuerkelch, Orden des Phoenix, Halbblut Prinz, Heiligtümer des Todes, Slytherin, Gryffindor, Hufflepuff, Ravenclaw, Fluffy, Krätze, Gillyweed, Kiemenkraut, Gleis 9 dreiviertel, Muggle, Reinblut, Dementor, Dumbledores Armee, Hausmeister, Hauself, Hogwarts Express, Schneeeule, Eule, Trevor, der verbotene Wald, Avada Kedavra, Expecto Patronum, Crutio, Expelliarmus, Protego, Wingardium Leviosa, Lumos, Reparo, Reducto, Fliegen, Kräuterkunde, Unterricht, Liebestrank, Tränke, Brauen, Magie, Schokofrosch, Kürbissaft, Nimbus Zweitausend, Halbblutprinz, Elder wand, Elderstab, Spiegel, Gruppenräume, Quidditch, Marauders Map, Karte des Rumtreibers, Portschlüssel, Animagus, Eulerei, Minecraft Haro, Trimagisches Turnier, Muggel,"
+    },
+    {
+        "name": "Computer- & Handyspiele",
+        "categories": ["Videospiele"],
+        "authors": [],
+        "words": "Minecraft, Overwatch, Lego Star Wars, Mahjong, Shellshock Live, Valorant, Fortnite, Bloons Tower Defense, League of Legends, Call of Duty, Starcraft, World of Warcraft, Golf it, The Survivalist, Clash Royal, Clash of Clans, Red Dead Redemption, Angry Birds, Super Mario, Luigis Mansion, Dark Souls, Demon Souls, Hearthstone, Diabolo, Raft, Ark, GTA, Farming Simulator, Spiritfarer, Unrailed, Phasmophobia, Cyberpunk, Sea of Thieves, Sims, Gang Beasts, Need for Speed, Satisfactory, Among Us, Tetris, Anno 1800, Assasis Creed, Counterstrike, Half-Life, Terraria, Animal Crossing, FIFA, Fall Guys, Mortal Combat, Subnautica, Rocket League, Hitman, Doom, Spelunky, Resident Evil, Fernbussimulator,"
+    },
+    {
+        "name": "Encanto Charaktere",
+        "categories": ["Filme", "Charaktere"],
+        "authors": [],
+        "words": "Mirabel, Camilo, Luisa, Abuela, Julieta, Agustin, Isabela, Pepa, Félix, Antonio, Dolores, Bruno,"
     }
 ]

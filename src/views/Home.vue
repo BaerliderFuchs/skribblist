@@ -96,10 +96,26 @@
                     </a>
                   </div>
                 </template>
-
                 <div class="card-content">
                   <div class="content">
-                    {{ wordlist.words }}
+                    <p>{{ wordlist.words }}</p>
+                    <p v-if="wordlist.authors">
+                      <b>Liste von: </b><br />
+                      <span
+                        v-for="author in wordlist.authors"
+                        :key="author"
+                        class="author"
+                        ><img :src="getAuthorLinkType(author)" />
+                        <a
+                          v-if="author.includes('://')"
+                          :href="author"
+                          target="_blank"
+                          >{{ getAuthorName(author) }}</a
+                        >
+                        <span v-else>{{ getAuthorName(author) }}</span>
+                        <br
+                      /></span>
+                    </p>
                   </div>
                 </div>
               </b-collapse>
@@ -210,7 +226,24 @@
 
                 <div class="card-content">
                   <div class="content">
-                    {{ wordlist.words }}
+                    <p>{{ wordlist.words }}</p>
+                    <p v-if="wordlist.authors">
+                      <b>Liste von: </b><br />
+                      <span
+                        v-for="author in wordlist.authors"
+                        :key="author"
+                        class="author"
+                        ><img :src="getAuthorLinkType(author)" />
+                        <a
+                          v-if="author.includes('://')"
+                          :href="author"
+                          target="_blank"
+                          >{{ getAuthorName(author) }}</a
+                        >
+                        <span v-else>{{ getAuthorName(author) }}</span>
+                        <br
+                      /></span>
+                    </p>
                   </div>
                 </div>
               </b-collapse>
@@ -226,6 +259,10 @@
 
 <script>
 import wordlistsJson from "@/wordsets.json";
+import twitterIcon from "@/assets/icons/twitter.png";
+import instagramIcon from "@/assets/icons/instagram.png";
+import discordIcon from "@/assets/icons/discord.png";
+
 /* import draggable from "vuedraggable";
  */
 export default {
@@ -235,6 +272,9 @@ export default {
   },
   data() {
     return {
+      twitterIcon: twitterIcon,
+      instagramIcon: instagramIcon,
+      discordIcon: discordIcon,
       wordlists: wordlistsJson,
       totalAmountOfLists: 0,
       averageAmountOfWords: 0,
@@ -437,6 +477,14 @@ export default {
       }
       localStorage.setItem("selectedLists", JSON.stringify(selectedLists));
     },
+    getAuthorName(author) {
+      return author.split("/")[author.split("/").length - 1];
+    },
+    getAuthorLinkType(link) {
+      if (link.includes("twitter")) return this.twitterIcon;
+      if (link.includes("instagram")) return this.instagramIcon;
+      if (link.includes("#")) return this.discordIcon;
+    },
   },
 };
 </script>
@@ -519,6 +567,10 @@ export default {
 .card {
   margin: 24px 0;
   transition: 0.2s;
+
+  a {
+    color: rgb(64, 64, 202);
+  }
 }
 .disabled {
   opacity: 0.6;
@@ -530,5 +582,13 @@ export default {
 }
 .card-container {
   position: relative;
+}
+
+.author {
+  img {
+    float: left;
+    height: 14px;
+    margin: 5px 8px 5px 0;
+  }
 }
 </style>
