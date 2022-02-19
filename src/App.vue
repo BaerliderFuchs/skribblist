@@ -8,16 +8,23 @@
       </h1>
       <nav>
         <router-link to="/">Wörterlisten</router-link> |
-        <router-link to="/credits">Credits</router-link>
+        <router-link to="/settings">Einstellungen</router-link> |
+        <router-link to="/credits">Credits</router-link> |
+        <router-link to="/changelog">Neuerungen</router-link>
       </nav>
     </header>
-    <router-view class="view" />
+    <transition name="fade" mode="out-in">
+      <router-view class="view" />
+    </transition>
   </div>
 </template>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
+body::-webkit-scrollbar {
+  display: none;
+}
 #app {
   font-family: "Architects Daughter", cursive;
   -webkit-font-smoothing: antialiased;
@@ -55,6 +62,7 @@ header {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -73,8 +81,24 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.8);
 }
-
 .view {
   padding: 32px 15%;
+
+  @media (max-width: 2048px) {
+    padding: 32px 32px;
+  }
+  @media (max-width: 1024px) {
+    padding: 32px 0;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

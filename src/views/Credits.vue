@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="credits box">
       <h1 class="subtitle">
         Grosses Dankeschön an alle Ersteller*innen der Wörterlisten!
@@ -10,16 +10,9 @@
 
         <th>Listen</th>
 
-        <tr v-for="author in authors" :key="author">
+        <tr v-for="author in authors" :key="author.link">
           <td>
-            <img :src="getAuthorLinkType(author.link)" />
-            <a
-              v-if="author.link.includes('://')"
-              :href="author.link"
-              target="_blank"
-              >{{ getAuthorName(author.link) }}</a
-            >
-            <span v-else>{{ getAuthorName(author.link) }}</span>
+            <AuthorLabel :author="author.link"></AuthorLabel>
           </td>
           <td class="number-cell">
             {{ author.words }}
@@ -29,24 +22,27 @@
           </td>
         </tr>
       </table>
+
+      <div class="creator">
+        <p>
+          Falls du eine Wörterliste beitragen willst oder einen Fehler melden
+          möchtest, schreib mir auf Discord!
+        </p>
+        <AuthorLabel class="contact" author="BaerliderFuchs#3582"></AuthorLabel>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import wordlistsJson from "@/wordsets.json";
-import twitterIcon from "@/assets/icons/twitter.png";
-import instagramIcon from "@/assets/icons/instagram.png";
-import discordIcon from "@/assets/icons/discord.png";
+import AuthorLabel from "@/components/AuthorLabel.vue";
 
 export default {
-  name: "Home",
-  components: {},
+  name: "Credits",
+  components: { AuthorLabel },
   data() {
     return {
-      twitterIcon: twitterIcon,
-      instagramIcon: instagramIcon,
-      discordIcon: discordIcon,
       wordlists: wordlistsJson,
       authors: [],
     };
@@ -89,25 +85,22 @@ export default {
     });
   },
 
-  methods: {
-    getAuthorName(author) {
-      return author.split("/")[author.split("/").length - 1];
-    },
-    getAuthorLinkType(link) {
-      if (link.includes("twitter")) return this.twitterIcon;
-      if (link.includes("instagram")) return this.instagramIcon;
-      if (link.includes("#")) return this.discordIcon;
-    },
-  },
+  methods: {},
 };
 </script>
 
 <style lang="scss">
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .credits {
   text-align: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 610px;
+
   a {
     color: rgb(64, 64, 202);
   }
@@ -136,16 +129,21 @@ export default {
   td,
   th {
     padding: 8px 12px;
-
-    img {
-      float: left;
-      height: 14px;
-      margin: 5px 8px 5px 0;
-    }
   }
 
   .number-cell {
     text-align: right;
+  }
+}
+
+.creator {
+  margin: 20px 0 28px 0;
+
+  .contact {
+    margin-top: 9px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 </style>

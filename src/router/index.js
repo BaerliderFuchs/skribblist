@@ -25,6 +25,18 @@ const routes = [
     component: () =>
       import("../views/Credits.vue"),
   },
+  {
+    path: "/changelog",
+    name: "Changelog",
+    component: () =>
+      import("../views/Changelog.vue"),
+  },
+  {
+    path: "/settings",
+    name: "Settings",
+    component: () =>
+      import("../views/Settings.vue"),
+  },
 ];
 
 const router = new VueRouter({

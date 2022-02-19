@@ -105,16 +105,9 @@
                         v-for="author in wordlist.authors"
                         :key="author"
                         class="author"
-                        ><img :src="getAuthorLinkType(author)" />
-                        <a
-                          v-if="author.includes('://')"
-                          :href="author"
-                          target="_blank"
-                          >{{ getAuthorName(author) }}</a
-                        >
-                        <span v-else>{{ getAuthorName(author) }}</span>
-                        <br
-                      /></span>
+                      >
+                        <AuthorLabel :author="author"></AuthorLabel>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -140,39 +133,35 @@
             </span>
           </b-tooltip>
         </h1>
-        <b-button
-          class="remove-all-button"
-          type="is-danger"
-          @click="disableAllLists()"
-          :disabled="totalWordCount < 1"
-          icon-left="delete"
-        >
-          Alle entfernen
-        </b-button>
-        <b-tooltip
-          label="Entfernt zufällige Wörter von grossen Listen, damit deren Wörter nicht zu häufig im Vergleich zu den kleineren Listen auftreten."
-          type="is-light"
-          multilined
-        >
-          <b-field class="balance-words">
-            <b-switch
-              v-model="balanceWords"
-              type="is-warning"
-              @input="getTotalWordCount()"
-              >Listen ausbalancieren</b-switch
-            >
-          </b-field>
-        </b-tooltip>
+        <div class="options-container">
+          <b-button
+            type="is-danger"
+            @click="disableAllLists()"
+            :disabled="totalWordCount < 1"
+            icon-left="delete"
+          >
+            Alle entfernen
+          </b-button>
 
-        <b-button
-          class="copy-button"
-          type="is-success"
-          @click="copyAll()"
-          :disabled="totalWordCount < 1"
-          icon-left="content-copy"
-        >
-          {{ totalWordCount }} Wörter kopieren
-        </b-button>
+          <b-button
+            class="save-preset-button"
+            label="Auswahl speichern"
+            type="is-warning"
+            :disabled="totalWordCount < 1"
+            icon-left="bookmark"
+            @click="savePreset()"
+          />
+
+          <b-button
+            class="copy-button"
+            type="is-success"
+            @click="copyAll()"
+            :disabled="totalWordCount < 1"
+            icon-left="content-copy"
+          >
+            {{ totalWordCount }} Wörter kopieren
+          </b-button>
+        </div>
       </div>
       <div class="scroll-container">
         <!--       <draggable
@@ -185,7 +174,11 @@
         @end="drag = false"
         v-bind="dragOptions"
       > -->
-        <transition-group type="transition" :name="!drag ? 'flip-list' : null">
+        <transition-group
+          type="transition"
+          :name="!drag ? 'flip-list' : null"
+          v-if="enabledWordlists.length"
+        >
           <section
             class="card-container"
             v-for="(wordlist, index) in enabledWordlists"
@@ -233,16 +226,9 @@
                         v-for="author in wordlist.authors"
                         :key="author"
                         class="author"
-                        ><img :src="getAuthorLinkType(author)" />
-                        <a
-                          v-if="author.includes('://')"
-                          :href="author"
-                          target="_blank"
-                          >{{ getAuthorName(author) }}</a
-                        >
-                        <span v-else>{{ getAuthorName(author) }}</span>
-                        <br
-                      /></span>
+                      >
+                        <AuthorLabel :author="author"></AuthorLabel>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -250,6 +236,26 @@
             </div>
           </section>
         </transition-group>
+        <div v-else class="select-preset-container">
+          <h1 v-if="presets && presets.length" class="subtitle">
+            Wähle eine Vorlage aus:
+          </h1>
+          <b-field v-if="presets && presets.length">
+            <b-select
+              placeholder="Vorlage auswählen"
+              v-model="selectedPreset"
+              :input="loadPreset()"
+            >
+              <option
+                v-for="preset in presets"
+                :value="preset"
+                :key="preset.name"
+              >
+                {{ preset.name }}
+              </option>
+            </b-select>
+          </b-field>
+        </div>
         <!--       </draggable>
  -->
       </div>
@@ -262,6 +268,7 @@ import wordlistsJson from "@/wordsets.json";
 import twitterIcon from "@/assets/icons/twitter.png";
 import instagramIcon from "@/assets/icons/instagram.png";
 import discordIcon from "@/assets/icons/discord.png";
+import AuthorLabel from "@/components/AuthorLabel.vue";
 
 /* import draggable from "vuedraggable";
  */
@@ -269,6 +276,7 @@ export default {
   name: "Home",
   components: {
     /* draggable */
+    AuthorLabel,
   },
   data() {
     return {
@@ -281,10 +289,11 @@ export default {
       enabledWordlists: [],
       categories: [],
       totalWordCount: 0,
+      presets: undefined,
+      selectedPreset: undefined,
       search: "",
       drag: false,
       filter: "Alle",
-      balanceWords: false,
       orders: [
         "Aplhabetisch ↓",
         "Aplhabetisch ↑",
@@ -296,6 +305,8 @@ export default {
   },
 
   created() {
+    this.presets = JSON.parse(localStorage.getItem("presets"));
+
     this.sortLibrary();
     this.categories.push("Alle");
     this.wordlists.forEach((wordlist) => {
@@ -341,7 +352,7 @@ export default {
   methods: {
     async copyAll() {
       let finalWordlist = "";
-      if (this.balanceWords) {
+      if (JSON.parse(localStorage.getItem("balanceLists"))) {
         finalWordlist = this.balanceWordlists();
       } else {
         this.enabledWordlists.forEach((wordlist) => {
@@ -349,18 +360,19 @@ export default {
         });
       }
 
+      if (JSON.parse(localStorage.getItem("replaceSharpS")))
+        finalWordlist = finalWordlist.replace(/ß/g, "ss");
+
       try {
         await navigator.clipboard.writeText(finalWordlist);
-        this.$buefy.notification.open({
-          message: `${this.totalWordCount} Wörter in die Zwischenablage kopiert`,
+        this.$buefy.toast.open({
+          message: `${this.totalWordCount} Wörter in die Zwischenablage kopiert!`,
           type: "is-success",
-          hasIcon: true,
         });
       } catch ($e) {
-        this.$buefy.notification.open({
+        this.$buefy.toast.open({
           message: "Etwas ist schief gelaufen",
           type: "is-danger",
-          hasIcon: true,
         });
       }
     },
@@ -372,7 +384,7 @@ export default {
     },
     getTotalWordCount() {
       let wordCount = 0;
-      if (this.balanceWords) {
+      if (JSON.parse(localStorage.getItem("balanceLists"))) {
         this.totalWordCount = this.balanceWordlists().split(",").length - 1;
       } else {
         this.enabledWordlists.forEach((wordlist) => {
@@ -477,13 +489,46 @@ export default {
       }
       localStorage.setItem("selectedLists", JSON.stringify(selectedLists));
     },
-    getAuthorName(author) {
-      return author.split("/")[author.split("/").length - 1];
+    savePreset() {
+      this.$buefy.dialog.prompt({
+        message: `Gib deiner Vorlage einen Namen:`,
+        confirmText: "Speichern",
+        cancelText: "Abbrechen",
+        inputAttrs: {
+          placeholder: "",
+          maxlength: 30,
+        },
+        trapFocus: true,
+        onConfirm: (value) => {
+          this.$buefy.toast.open({
+            message: `Vorlage "${value}" wurde erstellt`,
+            type: "is-success",
+          });
+
+          var selectedLists = [];
+          if (this.enabledWordlists.length) {
+            this.enabledWordlists.forEach((wordlist) => {
+              selectedLists.push(wordlist.name);
+            });
+          }
+          let presets = localStorage.getItem("presets")
+            ? JSON.parse(localStorage.getItem("presets"))
+            : [];
+          presets.push({ name: value, lists: selectedLists });
+          localStorage.setItem("presets", JSON.stringify(presets));
+
+          this.presets = JSON.parse(localStorage.getItem("presets"));
+        },
+      });
     },
-    getAuthorLinkType(link) {
-      if (link.includes("twitter")) return this.twitterIcon;
-      if (link.includes("instagram")) return this.instagramIcon;
-      if (link.includes("#")) return this.discordIcon;
+    loadPreset() {
+      let preset = this.selectedPreset;
+      preset?.lists.forEach((list) => {
+        this.wordlists.forEach((wordlist, i) => {
+          if (list == wordlist.name) this.enableWordlist(i);
+        });
+      });
+      this.selectedPreset = undefined;
     },
   },
 };
@@ -518,21 +563,39 @@ export default {
     position: relative;
     background: #586b7e;
     padding-bottom: 12px;
-    //box-shadow: 0px 10px 20px 15px #586b7e;
-    z-index: 1000;
     border-bottom: 2px dashed black;
     height: 114px;
 
     .search-container {
+      overflow-x: auto;
       display: flex;
       flex-direction: row;
 
       .search {
         flex: auto;
+        min-width: 200px;
       }
       .filter {
         margin-top: -32px;
         margin-left: 24px;
+      }
+    }
+
+    .options-container {
+      overflow-x: auto;
+      display: flex;
+      flex-direction: row;
+
+      .save-preset-button {
+        margin: 0 24px;
+      }
+
+      .tooltip {
+        position: static;
+      }
+
+      .copy-button {
+        margin-left: auto;
       }
     }
   }
@@ -550,20 +613,9 @@ export default {
   position: absolute;
   right: 4px;
   top: 4px;
-  z-index: 100;
+  z-index: 1;
 }
-.remove-all-button {
-  float: left;
-}
-.balance-words {
-  float: left;
-  margin: 8px 24px;
-  color: #363636;
-  font-weight: 600;
-}
-.copy-button {
-  float: right;
-}
+
 .card {
   margin: 24px 0;
   transition: 0.2s;
@@ -584,11 +636,16 @@ export default {
   position: relative;
 }
 
-.author {
-  img {
-    float: left;
-    height: 14px;
-    margin: 5px 8px 5px 0;
+.select-preset-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .subtitle {
+    color: #363636;
+    font-weight: 600;
   }
 }
 </style>
