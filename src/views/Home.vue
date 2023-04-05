@@ -84,12 +84,37 @@
                     role="button"
                     aria-controls="contentIdForA11y3"
                   >
-                    <p class="card-header-title">
-                      {{ wordlist.name
-                      }}<span class="float-right"
-                        >{{ wordlist.words.split(",").length - 1 }} Wörter</span
-                      >
-                    </p>
+                    <div class="card-header-title">
+                      {{ wordlist.name }}
+                      <div class="float-right">
+                        <div
+                          style="
+                            min-width: 100px;
+                            float: right;
+                            text-align: right;
+                          "
+                        >
+                          {{ wordlist.words.split(",").length - 1 }} Wörter
+                        </div>
+                        <div
+                          v-if="showCategoriesEnabled()"
+                          style="float: right"
+                        >
+                          <b-tag
+                            @click="
+                              filter == category
+                                ? (filter = 'Alle')
+                                : (filter = category)
+                            "
+                            class="category-tag"
+                            v-for="category in wordlist.categories"
+                            :key="category"
+                            :style="'background:' + stringToColour(category)"
+                            >{{ category }}</b-tag
+                          >
+                        </div>
+                      </div>
+                    </div>
                     <a class="card-header-icon">
                       <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
                       </b-icon>
@@ -204,12 +229,37 @@
                     role="button"
                     aria-controls="contentIdForA11y3"
                   >
-                    <p class="card-header-title">
-                      {{ wordlist.name
-                      }}<span class="float-right"
-                        >{{ wordlist.words.split(",").length - 1 }} Wörter</span
-                      >
-                    </p>
+                    <div class="card-header-title">
+                      {{ wordlist.name }}
+                      <div class="float-right">
+                        <div
+                          style="
+                            min-width: 100px;
+                            float: right;
+                            text-align: right;
+                          "
+                        >
+                          {{ wordlist.words.split(",").length - 1 }} Wörter
+                        </div>
+                        <div
+                          v-if="showCategoriesEnabled()"
+                          style="float: right"
+                        >
+                          <b-tag
+                            @click="
+                              filter == category
+                                ? (filter = 'Alle')
+                                : (filter = category)
+                            "
+                            class="category-tag"
+                            v-for="category in wordlist.categories"
+                            :key="category"
+                            :style="'background:' + stringToColour(category)"
+                            >{{ category }}</b-tag
+                          >
+                        </div>
+                      </div>
+                    </div>
                     <a class="card-header-icon">
                       <b-icon :icon="props.open ? 'menu-down' : 'menu-up'">
                       </b-icon>
@@ -301,6 +351,7 @@ export default {
         "Anzahl Wörter ↑",
       ],
       sort: "Aplhabetisch ↓",
+      colorCodes: [],
     };
   },
 
@@ -530,6 +581,46 @@ export default {
       });
       this.selectedPreset = undefined;
     },
+    stringToColour(str) {
+      if (this.colorCodes.find((color) => color[str]))
+        return this.colorCodes.find((color) => color[str])[str];
+
+      var hash = 0;
+      for (var i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
+      }
+
+      var colour = "#";
+      var luma = 0;
+
+      while (luma < 128) {
+        hash += Math.random();
+        colour = "#";
+
+        for (var j = 0; j < 3; j++) {
+          var value = (hash >> (j * 8)) & 0xff;
+          colour += ("00" + value.toString(16)).substr(-2);
+        }
+
+        var c = colour.substring(1); // strip #
+        var rgb = parseInt(c, 16); // convert rrggbb to decimal
+        var r = (rgb >> 16) & 0xff; // extract red
+        var g = (rgb >> 8) & 0xff; // extract green
+        var b = (rgb >> 0) & 0xff; // extract blue
+
+        luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
+      }
+
+      var colorObj = {};
+      colorObj[str] = colour;
+
+      this.colorCodes.push(colorObj);
+
+      return colour;
+    },
+    showCategoriesEnabled() {
+      return JSON.parse(localStorage.getItem("showCategories"));
+    },
   },
 };
 </script>
@@ -647,5 +738,8 @@ export default {
     color: #363636;
     font-weight: 600;
   }
+}
+.category-tag {
+  margin-left: 8px;
 }
 </style>

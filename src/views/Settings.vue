@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="settings box">
-      <section>
-      <h1 class="subtitle">Einstellungen</h1>
+      <section class="settings-section">
+      <h1 class="subtitle">Wörter kopieren</h1>
         <b-field class="setting">
           <b-switch
             :value="true"
@@ -29,14 +29,31 @@
         Listen nicht zu häufig auftreten
       </section>
 
-    <section v-if="presets && presets.length" class="preset-section">
-      <h1 class="subtitle">Vorlagen verwalten</h1>
+      <h1 class="subtitle">Anzeige</h1>
+      <section class="settings-section">
+
+        <b-field class="setting">
+          <b-switch
+            :value="true"
+            type="is-info"
+            v-model="showCategories"
+            :input="toggleSetting('showCategories')"
+            ><b>Kategorien anzeigen</b></b-switch
+          >
+        </b-field>
+        Ist dies aktiviert, werden die Kategorien der Wörterlisten angezeigt. Durch einen Klick auf eine Kategorie kann danach gefiltert werden.
+      </section>
+
+    <section v-if="presets && presets.length" class="settings-section preset-section">
+      <h1 class="subtitle">Deine Vorlagen</h1>
       <b-field v-for="preset in presets" :key="preset.name">
         <p>
             <b>{{ preset.name }}</b>
             <ul>
-                <li v-for="list in preset.lists" :key="list">{{ list }}</li>
             </ul>
+                <b-taglist>
+                <b-tag v-for="list in preset.lists" :key="list">{{ list }}</b-tag>
+    </b-taglist>
         </p>
         <b-button
           icon-right="delete"
@@ -56,12 +73,18 @@ export default {
   name: "Settings",
   components: {},
   data() {
-    return { replaceSharpS: false, balanceLists: false, presets: undefined };
+    return {
+      replaceSharpS: false,
+      balanceLists: false,
+      showCategories: false,
+      presets: undefined,
+    };
   },
 
   created() {
     this.replaceSharpS = localStorage.getItem("replaceSharpS");
     this.balanceLists = localStorage.getItem("balanceLists");
+    this.showCategories = localStorage.getItem("showCategories");
     this.presets = JSON.parse(localStorage.getItem("presets"));
   },
 
@@ -73,6 +96,9 @@ export default {
           break;
         case "balanceLists":
           localStorage.setItem(settingName, this.balanceLists);
+          break;
+        case "showCategories":
+          localStorage.setItem(settingName, this.showCategories);
           break;
         default:
           break;
@@ -134,6 +160,7 @@ export default {
   .subtitle {
     font-weight: 600;
     text-align: center;
+    margin-bottom: 12px;
   }
 
   p {
@@ -141,6 +168,13 @@ export default {
   }
   a {
     color: rgb(64, 64, 202);
+  }
+}
+.settings-section {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0px;
   }
 }
 </style>

@@ -1,6 +1,34 @@
 <template>
   <div class="container">
     <div class="changelog box">
+         <div class="entry">
+      <h1 class="subtitle">17. April 2022</h1>
+      <p>
+        <ul class="features">
+          <li>
+            Es gibt eine neue Einstellung, durch welche die Kategorien von Wörterlisten angezeigt werden. Durch einen Klick auf die Kategorie-Tags kann nach der entsprechenden Kategorie gefiltert werden.
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b>Neue Listen:</b>
+        <ul>
+          <li>
+            Sehenswürdigkeiten in Wien
+          </li>
+          <li>
+            Star Wars - Bekannte Fahrzeuge und Raumschiffe
+          </li>
+          <li>
+            Star Wars - Planeten
+          </li>
+          <li>
+            The Mandalorian - Charaktere
+          </li>
+        </ul>
+      </p>
+      </div>
+      <div class="entry">
       <h1 class="subtitle">19. Februar 2022</h1>
       <p>
         <ul class="features">
@@ -38,6 +66,7 @@
           </li>
         </ul>
       </p>
+      </div>
     </div>
   </div>
 </template>
@@ -66,6 +95,16 @@ export default {
 }
 .changelog {
   max-width: 610px;
+
+  .entry {
+    border-bottom: 2px dashed #afafaf;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+      border: none;
+    }
+  }
 
   .features {
     li {
